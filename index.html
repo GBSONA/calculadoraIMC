@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Tabela IMC</h1>
+        <section class="firstSection">
+            <div class="imc">
+                <h2>IMC</h2>
+                <p style="background-color:rgba(153, 50, 204, 0.747);">Menor que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p style="background-color:rgba(153, 50, 204, 0.747);">Entre 25,0 e 29,9</p>
+                <p>Entre 30,0 e 34,9</p>
+                <p style="background-color:rgba(153, 50, 204, 0.747);">Entre 35,0 e 39,9</p>
+                <p>Maior que 40,0</p>
+            </div>
+            <div class="resultado">
+                <h2>Resultado</h2>
+                <p style="background-color: rgb(216, 216, 216); color: black;">Abaixo do peso</p>
+                <p style="background-color: rgb(197, 197, 197); color: black;">Peso normal</p>
+                <p style="background-color: rgb(216, 216, 216); color: black;">Sobrepeso</p>
+                <p style="background-color: rgb(197, 197, 197); color: black;">Obesidade grau 1</p>
+                <p style="background-color: rgb(216, 216, 216); color: black;">Obesidade grau 2</p>
+                <p style="background-color: rgb(197, 197, 197); color: black;">Obesidade grau 3</p>
+            </div>
+        </section>
+        <section class="secondSection">
+            <h1>Calcule seu IMC</h1>
+            <form action="#" id="forms" method="post">
+                <label for="peso">Peso:</label>
+                <input type="text" placeholder="Exemplo: 50" id="peso" name="peso">
+                <label for="altura">Altura:</label>
+                <input type="text" placeholder="Exemplo: 1.80" id="altura" name="altura">
+                <button type="submit">Enviar</button>
+                
+                <div class="arrumar"><h3>Resultado: </h3>
+                    <div id="result"></div>
+                    </div>
+
+            </form>
+        </section>
+    </div>
+   
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
